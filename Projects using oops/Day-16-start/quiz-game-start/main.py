@@ -15,7 +15,9 @@ for question in question_data:
 
 
 qustion_list=QuizBrain(question_bank)
-qustion_list.next_question()
+
+while qustion_list.still_has_questions():
+    qustion_list.next_question()
     
 
     
